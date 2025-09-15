@@ -1,0 +1,19 @@
+@ZooApi_HostAddress = http://localhost:5257
+
+GET {{ZooApi_HostAddress}}/zoo/
+Accept: application/json
+
+###
+
+POST {{ZooApi_HostAddress}}/zoo/
+Content-Type: application/json
+
+{
+  "Id": "5",
+  "Animal": "Cow"
+}
+
+###
+
+DELETE {{ZooApi_HostAddress}}/zoo/2
+Content-Type: application/json
